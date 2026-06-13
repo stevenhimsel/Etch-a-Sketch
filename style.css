@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Zeilenumbruch für die Flex-Items aktivieren */
+    width: 600px;
+    height: 600px;
+    margin-left: 375px;
+}
+
+.quadrat {
+    width: calc(100% / 16); /* 1/16 der Breite = 37.5px pro Quadrat */
+    height: calc(100% / 16); /* 1/!6 der Höhe = 37.5px pro Quadrat */
+    box-sizing: border-box;
+    border: 1px solid #000; /* Umrisse sichtbar machen */
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.quadrat.hovered {
+    background-color: black;
+}
+
